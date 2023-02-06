@@ -53,6 +53,20 @@ h3 {
 	margin-right:80px;
 }
 
+.Keyword2 {
+	list-style-position:inside;
+	text-align: center;
+	margin-left:50px;
+	margin-right:70px;
+}
+
+.Keyword3 {
+	list-style-position:inside;
+	text-align: center;
+	margin-left:60px;
+	margin-right:150px;
+}
+
 .PictureContainer {
 	width : 500px;
 	margin : 0, auto;
