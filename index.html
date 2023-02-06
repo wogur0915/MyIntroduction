@@ -8,9 +8,28 @@
 	</head> 
 	<body>
 		<div class="MyProfile">
-			<h1 align="center"> 임재혁의 자기소개 </h1>
+			<h1 align="center"> 임재혁의 자기소개 홈페이지</h1>
 		</div>
 		<div class="Container" align="center">
+			<div class="PictureContainer">
+				<div class="PictureContent">
+					<div class="img-view">
+						<!-- 선택한 이미지가 보이는 공간 -->
+						<img width="200" height="150">
+					</div>
+					<div class="msg-area">
+						오늘의 사진 : <span id="foodName"> <!-- 사진의 이름이 들어올 공간 --></span>
+					</div>
+					<br>
+					<div class="btn-group">
+						<button id="addBtn">랜덤 선택</button>
+					</div>
+					<div class="img-thumb">
+						<!-- 4개의 이미지가 보이는 공간 -->
+					</div>
+				</div>
+			</div>
+			
 			<div class="MyPicture">
 				<h3>
 					프로필 사진
@@ -31,7 +50,7 @@
 				<span>이름 : 임재혁<br></span>
 			</div>
 		</div>
-		<br>
+		<br><br>
 		
 		<hr class="Separator">
 
@@ -42,8 +61,8 @@
 			<i>안녕하세요 저는 충북대학교 컴퓨터공학과 4학년 임재혁입니다.</i>
 		</div>
 		
-		<br>
-		
+		<hr class="Separator">
+				
 		<div class="Detail" align="center">
 			<div>
 				<h3>보유 자격증</h3>
@@ -79,6 +98,39 @@
 				</ul>
 			</div>
 		</div>
+		
+		<br>
+		<h3>
+			My Github
+			<br>
+			<a href="https://github.com/wogur0915" style="font-style:italic;" target="_blank">https://github.com/wogur0915</a>
+		</h3>
+	
+		<hr class="Separator">
+		<br>
+		
+		<div class="Favorite" align=center>
+        <h3>나의 취향</h3>
+        <table border="1" cellpadding="20">
+            <thead>
+                <tr>
+                    <th>음식</th>
+                    <th>영화</th>
+                    <th>음악</th>
+                    <th>요리</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>치킨</td>
+                    <td>라라랜드</td>
+                    <td>밴드 음악</td>
+                    <td>일식</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br><br>
 
 	</body>
 </html>
