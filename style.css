@@ -8,13 +8,28 @@ h3 {
 	font-size: 30px;
 }
 
+.Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .MyProfile{
 	background-color:lightblue;
 }
 
 .Introduce{
-	background:lightgreen;
+	/* background:lightgreen; */
 	margin:40px;
+}
+
+.InterverLine {
+	background:lightgreen;
+}
+
+.MyPicture {
+  float: left;
+  margin-right: 100px;
 }
 
 .MyKeyword {
