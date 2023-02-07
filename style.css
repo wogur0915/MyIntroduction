@@ -8,10 +8,6 @@ table, td, th {
   border-collapse : collapse;
 };
 
-.windowFix {
-	width:1080px;
-}
-
 .title {
 	font-weight: bold;
 	font-size: 30px;
@@ -56,24 +52,26 @@ table, td, th {
 }
 
 .Keyword {
-	list-style-position:inside;
+	/* list-style-position:inside; */
 	text-align: center;
 	margin-left:60px;
 	margin-right:80px;
 }
 
 .Keyword2 {
-	list-style-position:inside;
+	/* list-style-position:inside; */
 	text-align: center;
 	margin-left:50px;
 	margin-right:70px;
+	list-style-type: none;
 }
 
 .Keyword3 {
-	list-style-position:inside;
+	/* list-style-position:inside; */
 	text-align: center;
 	margin-left:60px;
-	margin-right:150px;
+	margin-right:130px;
+	list-style-type: none;
 }
 
 .PictureContainer {
