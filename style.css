@@ -13,6 +13,7 @@ table, td, th {
   	border : 1px solid black;
 	border-collapse : collapse;
 	align-items: center;
+	text-align: center;
 };
 
 .title {
@@ -108,6 +109,24 @@ table, td, th {
 	margin : 0, auto;
 }
 
+.Certificate {
+	border: 1px solid black;
+	border-radius: 20px;
+	padding-top : 10px;
+	width : 0 350px;
+	margin-right: 160px;
+	background-color: #FFFA82;
+}
+
+.MyKeyword {
+	border: 1px solid black;
+	border-radius: 20px;
+	width : 0 350px;
+	padding : 20px;
+	margin-right: 160px;
+	margin-left: 50px;
+	background-color: #F4A460;
+}
 /* #randBtn {
 	width: auto;
 	height: 30px;
