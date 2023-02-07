@@ -132,6 +132,14 @@ table, td, th {
 	text-align:center;
 	justify-content: center;
 }
+
+.card-title {
+	font-weight: bold;
+}
+
+.card-body {
+	border-top: 1px solid lightgrey;
+}
 /* #randBtn {
 	width: auto;
 	height: 30px;
