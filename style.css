@@ -1,4 +1,111 @@
+h3 {
+	color:green;
+	text-align:center;
+}
+
+table, td, th {
+  border : 1px solid black;
+  border-collapse : collapse;
+};
+
 .title {
 	font-weight: bold;
 	font-size: 30px;
+}
+
+.Container{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.Detail{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.MyProfile{
+	background-color:lightblue;
+	margin-bottom:50px;
+}
+
+.MyInfo {
+	border: 1px solid black;
+	border-radius: 20px;
+	padding: 10px 30px;
+	margin-right: 180px;
+	background-color: #AFFFEE;
+}
+
+.Introduce{
+	/* background:lightgreen; */
+	margin:40px;
+}
+
+.Separator {
+	width: 30%;
+	/* height: 2px; */
+	border: 2px solid lightgreen;
+	margin: 10px, auto;
+}
+
+.MyPicture {
+	float: left;
+	margin-right: 100px;
+}
+
+#Profile {
+	width:200px;
+	height:150px;
+	border-radius: 20px;
+}
+
+
+.Keyword {
+	/* list-style-position:inside; */
+	text-align: center;
+	margin-left:60px;
+	margin-right:80px;
+	list-style-type: none;
+}
+
+.Keyword2 {
+	/* list-style-position:inside; */
+	text-align: center;
+	margin-left:50px;
+	margin-right:70px;
+	list-style-type: none;
+}
+
+.Keyword3 {
+	/* list-style-position:inside; */
+	text-align: center;
+	margin-left:60px;
+	margin-right:130px;
+	list-style-type: none;
+}
+
+.PictureContainer {
+	width : 300px;
+	margin : 0 100px;
+	border: 1px solid black;
+	border-radius: 20px;
+	padding: 15px 0px;
+	background-color:lightyellow;
+}
+
+.PictureContent {
+	width : 300px;
+	padding-top : 20px;
+	margin : 0, auto;
+}
+
+#randBtn {
+	width: auto;
+	height: 30px;
+    background-color: #1890ff;
+    border-radius: 4px;
+    border: 1px solid #41a3fe;
+    color: white;
 }
