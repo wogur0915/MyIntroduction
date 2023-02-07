@@ -1,11 +1,18 @@
 h3 {
 	color:green;
 	text-align:center;
+	font-size: 16pt;
+	font-weight: bold;
+}
+
+div {
+	font-weight: bold;
 }
 
 table, td, th {
-  border : 1px solid black;
-  border-collapse : collapse;
+  	border : 1px solid black;
+	border-collapse : collapse;
+	align-items: center;
 };
 
 .title {
@@ -101,11 +108,11 @@ table, td, th {
 	margin : 0, auto;
 }
 
-#randBtn {
+/* #randBtn {
 	width: auto;
 	height: 30px;
     background-color: #1890ff;
     border-radius: 4px;
     border: 1px solid #41a3fe;
     color: white;
-}
+} */
