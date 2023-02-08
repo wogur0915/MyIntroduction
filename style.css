@@ -1,11 +1,19 @@
 h3 {
 	color:green;
 	text-align:center;
+	font-size: 16pt;
+	font-weight: bold;
+}
+
+div {
+	font-weight: bold;
 }
 
 table, td, th {
-  border : 1px solid black;
-  border-collapse : collapse;
+  	border : 1px solid black;
+	border-collapse : collapse;
+	align-items: center;
+	text-align: center;
 };
 
 .title {
@@ -101,11 +109,42 @@ table, td, th {
 	margin : 0, auto;
 }
 
-#randBtn {
+.Certificate {
+	border: 1px solid black;
+	border-radius: 20px;
+	padding-top : 10px;
+	width : 0 350px;
+	margin-right: 160px;
+	background-color: #FFFA82;
+}
+
+.MyKeyword {
+	border: 1px solid black;
+	border-radius: 20px;
+	width : 0 350px;
+	padding : 20px;
+	margin-right: 160px;
+	margin-left: 50px;
+	background-color: #F4A460;
+}
+.col {
+	width: 20%;
+	text-align:center;
+	justify-content: center;
+}
+
+.card-title {
+	font-weight: bold;
+}
+
+.card-body {
+	border-top: 1px solid lightgrey;
+}
+/* #randBtn {
 	width: auto;
 	height: 30px;
     background-color: #1890ff;
     border-radius: 4px;
     border: 1px solid #41a3fe;
     color: white;
-}
+} */
