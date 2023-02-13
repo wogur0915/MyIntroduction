@@ -24,7 +24,7 @@
 						</div>
 						<br>
 						<div class="btn-group">
-							<button type="button" class="btn btn-info" style="color:white;">랜덤 선택</button>
+							<button type="button" id=btnRandom class="btn btn-info" style="color:white;">랜덤 선택</button>
 						</div>
 						<br><br>
 						<div>
@@ -215,6 +215,24 @@
 		imgThumb4.addEventListener("mouseover", mouseoverImg4);
 		imgThumb4.addEventListener("mouseout", mouseoutImg4);
 		imgThumb4.addEventListener("click", clickImg4);
+
+		var randbtn = document.getElementById("btnRandom");
+		randbtn.addEventListener("click", selectRandomImg);
+
+		function selectRandomImg() {
+		var images = [img1, img2, img3, img4];
+		var randomIndex = Math.floor(Math.random() * images.length);
+		document.getElementById("showImg").src = images[randomIndex].src;
+
+			for (var i = 0; i < images.length; i++) {
+				if (i === randomIndex) {
+				images[i].style.opacity = "1";
+				document.getElementById("TodayProfileN").innerHTML = "고양이" + (i + 1);
+				} else {
+				images[i].style.opacity = "0.5";
+				}
+			}
+		}
 
 
 		function mouseoverImg1() {
