@@ -217,11 +217,18 @@
 		imgThumb4.addEventListener("click", clickImg4);
 
 		var randbtn = document.getElementById("btnRandom");
+		var currentImgIndex = 3;
 		randbtn.addEventListener("click", selectRandomImg);
 
 		function selectRandomImg() {
 		var images = [img1, img2, img3, img4];
 		var randomIndex = Math.floor(Math.random() * images.length);
+
+		// 선택된 이미지가 현재 선택된 이미지와 같으면 다시 선택한다.
+		while (randomIndex === currentImgIndex) {
+			randomIndex = Math.floor(Math.random() * images.length);
+		}
+		currentImgIndex = randomIndex;
 		document.getElementById("showImg").src = images[randomIndex].src;
 
 			for (var i = 0; i < images.length; i++) {
