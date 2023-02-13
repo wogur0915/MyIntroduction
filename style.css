@@ -34,7 +34,7 @@ table, td, th {
 }
 
 .MyProfile{
-	background-color:lightblue;
+	background-color:Rgba(133,122,200);
 	margin-bottom:50px;
 }
 
@@ -139,6 +139,11 @@ table, td, th {
 
 .card-body {
 	border-top: 1px solid lightgrey;
+}
+
+.img-thumb {
+	opacity:0.5;
+	width:40px; height:30px;
 }
 /* #randBtn {
 	width: auto;
