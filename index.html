@@ -20,7 +20,7 @@
 							<img id=showImg src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwbqz0RKvg6rUoehH3z81Fm3LP4fI-gHuspA&usqp=CAU" width="200" height="150">
 						</div>
 						<div class="msg-area">
-							선택한 사진 : <span id="TodayProfileN">고양이4 <!-- 사진의 이름이 들어올 공간 --></span>
+							선택된 사진 : <span id="TodayProfileN">고양이4 <!-- 사진의 이름이 들어올 공간 --></span>
 						</div>
 						<br>
 						<div class="btn-group">
@@ -192,102 +192,107 @@
 			</div>
 		<br><br>
 		</div>
+		</div>
 
 	
-	<script>
-		var imgThumb1 = document.getElementById("img1");
-		var imgThumb2 = document.getElementById("img2");
-		var imgThumb3 = document.getElementById("img3");
-		var imgThumb4 = document.getElementById("img4");
+		<script>
+			var imgThumb1 = document.getElementById("img1");
+			var imgThumb2 = document.getElementById("img2");
+			var imgThumb3 = document.getElementById("img3");
+			var imgThumb4 = document.getElementById("img4");
+			var imgShow = document.getElementById("showImg");
 
-		imgThumb1.addEventListener("mouseover", mouseoverImg1);
-		imgThumb1.addEventListener("mouseout", mouseoutImg1);
-		imgThumb1.addEventListener("click", clickImg1);
+			imgThumb1.addEventListener("mouseover", mouseoverImg1);
+			imgThumb1.addEventListener("mouseout", mouseoutImg1);
+			imgThumb1.addEventListener("click", clickImg1);
 
-		imgThumb2.addEventListener("mouseover", mouseoverImg2);
-		imgThumb2.addEventListener("mouseout", mouseoutImg2);
-		imgThumb2.addEventListener("click", clickImg2);
+			imgThumb2.addEventListener("mouseover", mouseoverImg2);
+			imgThumb2.addEventListener("mouseout", mouseoutImg2);
+			imgThumb2.addEventListener("click", clickImg2);
 
-		imgThumb3.addEventListener("mouseover", mouseoverImg3);
-		imgThumb3.addEventListener("mouseout", mouseoutImg3);
-		imgThumb3.addEventListener("click", clickImg3);
+			imgThumb3.addEventListener("mouseover", mouseoverImg3);
+			imgThumb3.addEventListener("mouseout", mouseoutImg3);
+			imgThumb3.addEventListener("click", clickImg3);
 
-		imgThumb4.addEventListener("mouseover", mouseoverImg4);
-		imgThumb4.addEventListener("mouseout", mouseoutImg4);
-		imgThumb4.addEventListener("click", clickImg4);
+			imgThumb4.addEventListener("mouseover", mouseoverImg4);
+			imgThumb4.addEventListener("mouseout", mouseoutImg4);
+			imgThumb4.addEventListener("click", clickImg4);
 
-		var randbtn = document.getElementById("btnRandom");
-		var currentImgIndex = 3;
-		randbtn.addEventListener("click", selectRandomImg);
+			var randbtn = document.getElementById("btnRandom");
+			var currentImgIndex = 3;
+			randbtn.addEventListener("click", selectRandomImg);
 
-		function selectRandomImg() {
-		var images = [img1, img2, img3, img4];
-		var randomIndex = Math.floor(Math.random() * images.length);
+			function selectRandomImg() {
+				var images = [imgThumb1, imgThumb2, imgThumb3, imgThumb4];
+				// var images = [img1, img2, img3, img4];   html 아이디를 직접 불러와서도 사용할 수 있지만 getElementById 를 통해서 변수로 선언하는 것을 권장한다.
+				var randomIndex = Math.floor(Math.random() * images.length);
 
-		// 선택된 이미지가 현재 선택된 이미지와 같으면 다시 선택한다.
-		while (randomIndex === currentImgIndex) {
-			randomIndex = Math.floor(Math.random() * images.length);
-		}
-		currentImgIndex = randomIndex;
-		document.getElementById("showImg").src = images[randomIndex].src;
+				// 선택된 이미지가 현재 선택된 이미지와 같으면 다시 선택한다.
+				while (randomIndex === currentImgIndex) {
+					randomIndex = Math.floor(Math.random() * images.length);
+				}
+				currentImgIndex = randomIndex;
+				document.getElementById("showImg").src = images[randomIndex].src;
 
-			for (var i = 0; i < images.length; i++) {
-				if (i === randomIndex) {
-				images[i].style.opacity = "1";
-				document.getElementById("TodayProfileN").innerHTML = "고양이" + (i + 1);
-				} else {
-				images[i].style.opacity = "0.5";
+				for (var i = 0; i < images.length; i++) {
+					if (i === randomIndex) {
+						images[i].style.opacity = "1";
+						document.getElementById("TodayProfileN").innerHTML = "고양이" + (i + 1);
+					}
+					else {
+						images[i].style.opacity = "0.5";
+					}
 				}
 			}
-		}
 
 
-		function mouseoverImg1() {
-			document.getElementById("TodayProfileN").innerHTML = "고양이1";
-			document.getElementById("img1").style.opacity = "1";
-		}
-		function mouseoutImg1() {
-			document.getElementById("img1").style.opacity = "0.5";
-		}
-		function clickImg1() {
-			document.getElementById("showImg").src = this.src;
-		}
+			function mouseoverImg1() {
+				imgThumb1.style.opacity = "1";
+			}
+			function mouseoutImg1() {
+				imgThumb1.style.opacity = "0.5";
+			}
+			function clickImg1() {
+				imgShow.src = this.src;
+				document.getElementById("TodayProfileN").innerHTML = "고양이1";
+			}
 
-		function mouseoverImg2() {
-			document.getElementById("TodayProfileN").innerHTML = "고양이2";
-			document.getElementById("img2").style.opacity = "1";
-		}
-		function mouseoutImg2() {
-			document.getElementById("img2").style.opacity = "0.5";
-		}
-		function clickImg2() {
-			document.getElementById("showImg").src = this.src;
-		}
+			function mouseoverImg2() {
+				imgThumb2.style.opacity = "1";
+			}
+			function mouseoutImg2() {
+				imgThumb2.style.opacity = "0.5";
+			}
+			function clickImg2() {
+				imgShow.src = this.src;
+				document.getElementById("TodayProfileN").innerHTML = "고양이2";
 
-		function mouseoverImg3() {
-			document.getElementById("TodayProfileN").innerHTML = "고양이3";
-			document.getElementById("img3").style.opacity = "1";
-		}
-		function mouseoutImg3() {
-			document.getElementById("img3").style.opacity = "0.5";
-		}
-		function clickImg3() {
-			document.getElementById("showImg").src = this.src;
-		}
+			}
 
-		function mouseoverImg4() {
-			document.getElementById("TodayProfileN").innerHTML = "고양이4";
-			document.getElementById("img4").style.opacity = "1";
-		}
-		function mouseoutImg4() {
-			document.getElementById("img4").style.opacity = "0.5";
-		}
-		function clickImg4() {
-			document.getElementById("showImg").src = this.src;
-		}
+			function mouseoverImg3() {
+				imgThumb3.style.opacity = "1";
+			}
+			function mouseoutImg3() {
+				imgThumb3.style.opacity = "0.5";
+			}
+			function clickImg3() {
+				imgShow.src = this.src;
+				document.getElementById("TodayProfileN").innerHTML = "고양이3";
+			}
 
-	</script>
+			function mouseoverImg4() {
+				imgThumb4.style.opacity = "1";
+			}
+			function mouseoutImg4() {
+				imgThumb4.style.opacity = "0.5";
+			}
+			function clickImg4() {
+				imgShow.src = this.src;
+				document.getElementById("TodayProfileN").innerHTML = "고양이4";
+			}
+
+		</script>
 		
-
+		
 	</body>
 </html>
