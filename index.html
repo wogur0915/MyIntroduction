@@ -17,7 +17,7 @@
 					<div class="PictureContent">
 						<div class="img-view">
 							<!-- 선택한 이미지가 보이는 공간 -->
-							<img width="200" height="150">
+							<img id=showImg width="200" height="150">
 						</div>
 						<div class="msg-area">
 							오늘의 사진 : <span id="TodayProfileN"> <!-- 사진의 이름이 들어올 공간 --></span>
@@ -202,12 +202,20 @@
 
 		imgThumb1.addEventListener("mouseover", mouseoverImg1);
 		imgThumb1.addEventListener("mouseout", mouseoutImg1);
+		imgThumb1.addEventListener("click", clickImg1);
+
 		imgThumb2.addEventListener("mouseover", mouseoverImg2);
 		imgThumb2.addEventListener("mouseout", mouseoutImg2);
+		imgThumb2.addEventListener("click", clickImg2);
+
 		imgThumb3.addEventListener("mouseover", mouseoverImg3);
 		imgThumb3.addEventListener("mouseout", mouseoutImg3);
+		imgThumb3.addEventListener("click", clickImg3);
+
 		imgThumb4.addEventListener("mouseover", mouseoverImg4);
 		imgThumb4.addEventListener("mouseout", mouseoutImg4);
+		imgThumb4.addEventListener("click", clickImg4);
+
 
 		function mouseoverImg1() {
 			document.getElementById("TodayProfileN").innerHTML = "고양이1";
@@ -216,6 +224,10 @@
 		function mouseoutImg1() {
 			document.getElementById("img1").style.opacity = "0.5";
 		}
+		function clickImg1() {
+			document.getElementById("showImg").src = this.src;
+		}
+
 		function mouseoverImg2() {
 			document.getElementById("TodayProfileN").innerHTML = "고양이2";
 			document.getElementById("img2").style.opacity = "1";
@@ -223,6 +235,10 @@
 		function mouseoutImg2() {
 			document.getElementById("img2").style.opacity = "0.5";
 		}
+		function clickImg2() {
+			document.getElementById("showImg").src = this.src;
+		}
+
 		function mouseoverImg3() {
 			document.getElementById("TodayProfileN").innerHTML = "고양이3";
 			document.getElementById("img3").style.opacity = "1";
@@ -230,6 +246,10 @@
 		function mouseoutImg3() {
 			document.getElementById("img3").style.opacity = "0.5";
 		}
+		function clickImg3() {
+			document.getElementById("showImg").src = this.src;
+		}
+
 		function mouseoverImg4() {
 			document.getElementById("TodayProfileN").innerHTML = "고양이4";
 			document.getElementById("img4").style.opacity = "1";
@@ -237,6 +257,10 @@
 		function mouseoutImg4() {
 			document.getElementById("img4").style.opacity = "0.5";
 		}
+		function clickImg4() {
+			document.getElementById("showImg").src = this.src;
+		}
+
 	</script>
 		
 
