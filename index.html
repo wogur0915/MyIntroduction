@@ -213,21 +213,26 @@
 			  var randbtn = $("#btnRandom");
 			  var currentImgIndex = 3;
 				
-			  imgThumb1.on("mouseover", mouseoverImg1);
-			  imgThumb1.on("mouseout", mouseoutImg1);
-			  imgThumb1.on("click", clickImg1);
-
-			  imgThumb2.on("mouseover", mouseoverImg2);
-			  imgThumb2.on("mouseout", mouseoutImg2);
-			  imgThumb2.on("click", clickImg2);
-
-			  imgThumb3.on("mouseover", mouseoverImg3);
-			  imgThumb3.on("mouseout", mouseoutImg3);
-			  imgThumb3.on("click", clickImg3);
-
-			  imgThumb4.on("mouseover", mouseoverImg4);
-			  imgThumb4.on("mouseout", mouseoutImg4);
-			  imgThumb4.on("click", clickImg4);
+			  imgThumb1.on({
+				mouseover: mouseoverImg1,
+				mouseout: mouseoutImg1,
+				click: clickImg1
+			  });
+			  imgThumb2.on({
+				mouseover: mouseoverImg2,
+				mouseout: mouseoutImg2,
+				click: clickImg2
+			  });
+			  imgThumb3.on({
+				mouseover: mouseoverImg3,
+				mouseout: mouseoutImg3,
+				click: clickImg3
+			  });
+			  imgThumb4.on({
+				mouseover: mouseoverImg4,
+				mouseout: mouseoutImg4,
+				click: clickImg4
+			  });
 				
 			  randbtn.click(selectRandomImg);
 
